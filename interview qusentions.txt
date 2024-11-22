@@ -1,0 +1,25 @@
+what  is network ?
+what are the Types of Network?
+what are the types of  NETWORK DEVICES?
+why its  CALLED AS INTELLIGNET DEVICE?
+what are ADVANTAGES AND DISADVANTAGES OF 
+LAN
+WAN
+MAN?
+what are the   DIFFRENCE BETWEEN PRIVATE AND PUBLIC IP?
+ HOW TO CHECK THE IP ADDRESS OF SYSTEM?
+what is network interface card?
+what is LOOP BACK ADDRESS and why its used?
+what Dynamic Host Configuration Protocol?
+what is the DHCP WORK PROCESS?
+how dora works?
+
+what is STATIC IP?
+difference b/w ipv4 nad ipv6?
+what is MAC ADDRESS how to check ?
+IS IT POSSIBLE ACCESS THE INTERNET BY USING APIPA IP 
+ADDRESS?
+WHEN DHCP CLIENT SENDS REQUEST TO DHCP SERVER 
+WHAT WILL BE THE IP ADDRESS OF DHCP CLIENT?
+DHCP OFFER CONATINS ?
+EXPLAIN BRIEFLY ABOUT MAC ADDRESS?

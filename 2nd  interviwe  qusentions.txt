@@ -1,0 +1,259 @@
+
+
+1. What is a Network?
+A network is a system of interconnected computers, servers, and devices that can communicate and share resources. Networks can facilitate various services, such as file sharing, printer access, internet connectivity, and more. The primary goal is to enable efficient communication and resource utilization.
+
+2. Types of Networks:
+LAN (Local Area Network):
+
+Scope: Typically confined to a small geographical area, like a single building or campus.
+Characteristics: High-speed, low latency, and often uses Ethernet technology. Common in homes and offices for connecting devices like computers, printers, and switches.
+
+WAN (Wide Area Network):
+
+Scope: Covers a broad geographical area, potentially spanning cities, countries, or continents.
+Characteristics: Typically slower than LANs due to longer distances and varying technologies (e.g., satellite, fiber optics). The internet is the largest WAN, connecting millions of networks globally.
+
+MAN (Metropolitan Area Network):
+
+Scope: Intermediate, typically covering a city or large campus.
+Characteristics: Can connect multiple LANs within a city and is often used by businesses and government entities for high-speed connectivity.
+
+PAN (Personal Area Network):
+
+Scope: Very localized, often within a few meters.
+Characteristics: Used for personal devices, such as connecting smartphones to laptops via Bluetooth.
+
+3. Public vs Private IP Address:
+Public IP:
+
+Definition: An IP address that is accessible over the internet and unique across the globe.
+Example: If you host a website, it requires a public IP to be reachable by users worldwide.
+Private IP:
+
+Definition: An IP address used within a private network. It is not routable on the internet, allowing multiple devices to share the same private IP address.
+Example: Devices on a home network may use addresses like 192.168.1.1 or 10.0.0.2.
+
+4. Public IP Range:
+Public IP addresses are defined by several classes:
+
+Class A: 1.0.0.0 - 9.255.255.255
+Class B: 128.0.0.0 - 191.255.255.255
+Class C: 192.0.0.0 - 223.255.255.255 These ranges are allocated by IANA (Internet Assigned Numbers Authority) and can be used by any device connected to the internet.
+
+5. Private IP Range:
+Private IP addresses fall within specific ranges:
+
+Class A: 10.0.0.0 - 10.255.255.255
+Class B: 172.16.0.0 - 172.31.255.255
+Class C: 192.168.0.0 - 192.168.255.255 These addresses can be reused across different networks and are commonly used in home and corporate environments.
+
+6. DHCP (Dynamic Host Configuration Protocol):
+DHCP is a network management protocol that automatically assigns IP addresses to devices on a network. It simplifies IP address management by dynamically allocating addresses from a defined range, reducing manual configuration errors and IP conflicts.
+
+7. DNS (Domain Name System):
+DNS translates human-readable domain names (like www.example.com) into machine-readable IP addresses. It functions as a directory service for the internet, allowing users to access websites without memorizing IP addresses. DNS servers store records that map domain names to IP addresses.
+
+8. Common Port Numbers:
+Ports are endpoints for communication:
+
+HTTP: Port 80, used for web traffic.
+HTTPS: Port 443, used for secure web traffic.
+SSH: Port 22, used for secure shell access.
+FTP: Port 21, used for file transfers. These standard ports help identify the type of service being requested.
+
+9. 3-Way Handshake Process:
+This is a method used in TCP to establish a connection:
+
+SYN: The client sends a SYN packet to the server to initiate the connection.
+SYN-ACK: The server acknowledges receipt with a SYN-ACK packet.
+ACK: The client sends an ACK packet back to confirm the connection. After this, data transmission can begin.
+
+10. Color Coding for Straight and Crossover Cables:
+Straight-through Cable: Used to connect devices of different types (e.g., computer to switch). Both ends are wired the same (either T568A or T568B).
+
+Crossover Cable: Used to connect similar devices (e.g., two computers). One end is wired T568A and the other T568B.
+
+T568A Wiring:
+
+White/Green
+Green
+White/Orange
+Blue
+White/Blue
+Orange
+White/Brown
+Brown
+T568B Wiring:
+
+White/Orange
+Orange
+White/Green
+Blue
+White/Blue
+Green
+White/Brown
+Brown
+
+11. Subnet:
+A subnet is a logical subdivision of an IP network. It allows organizations to create smaller, manageable networks that enhance performance and security. Subnets can help reduce congestion and improve speed by limiting the broadcast domain.
+
+12. Subnet Mask for 192.168.20.1/28:
+The subnet mask for this CIDR notation is 255.255.255.240, meaning:
+
+The first 28 bits are used for the network part.
+The remaining 4 bits are for host addresses.
+
+13. Subnets for /28:
+A /28 subnet can accommodate 16 IP addresses (2^4 = 16). However, 2 addresses are reserved: one for the network address and one for the broadcast address. Thus, there are 14 usable IP addresses.
+
+14. Network Bits and Host Bits (Classes A, B, and C):
+Class A:
+
+Network bits: 8
+Host bits: 24
+Supports up to 16,777,214 hosts.
+Class B:
+
+Network bits: 16
+Host bits: 16
+Supports up to 65,534 hosts.
+Class C:
+
+Network bits: 24
+Host bits: 8
+Supports up to 254 hosts.
+
+15. Loopback Address and its Range:
+The loopback address is used for testing and diagnostics on a local machine.
+
+Commonly Used Address: 127.0.0.1
+Range: 127.0.0.0 - 127.255.255.255
+
+16. APIPA (Automatic Private IP Addressing):
+APIPA allows a device to automatically assign itself an IP address when a DHCP server is unavailable.
+
+Range: 169.254.0.0 - 169.254.255.255
+This feature is useful for small networks without a DHCP server.
+
+17. LAN, WAN, MAN Advantages and Disadvantages:
+LAN:
+
+Advantages:
+High speed (typically 100 Mbps to 1 Gbps).
+Low cost for setup and maintenance.
+
+Disadvantages:
+Limited to a small area.
+
+WAN:
+
+Advantages:
+Connects multiple LANs over large distances.
+
+Disadvantages:
+More expensive to establish and maintain.
+Generally slower due to distance and bandwidth limitations.
+
+MAN:
+
+Advantages:
+High-speed connectivity over a larger area than LAN.
+
+Disadvantages:
+More complex to manage than a LAN.
+
+18. What is Topology?
+Network topology refers to the arrangement of different elements (links, nodes, etc.) in a network. It defines how devices are interconnected and how they communicate with each other. Common topologies include star, ring, mesh, and tree.
+
+19. Star, Mesh, Ring, Tree Topology Advantages and Disadvantages:
+Star Topology:
+
+Advantages:
+Easy to install and manage.
+If one cable fails, only one device is affected.
+
+Disadvantages:
+If the central hub fails, the entire network goes down.
+
+Mesh Topology:
+
+Advantages:
+High redundancy; if one connection fails, others can maintain connectivity.
+Highly resilient.
+
+Disadvantages:
+Expensive due to the number of cables and connections needed.
+Complex to set up and maintain.
+
+Ring Topology:
+
+Advantages:
+Each device has equal access to the network.
+Simple to install and manage.
+
+Disadvantages:
+A failure in any cable or device can disrupt the entire network.
+
+Tree Topology:
+
+Advantages:
+Scalable; can easily add more devices.
+Hierarchical, making it easier to manage and troubleshoot.
+
+Disadvantages:
+If the root node fails, the entire network segment is affected.
+
+20. OSI Model Layers:
+The OSI (Open Systems Interconnection) model consists of seven layers that define how data is transmitted over a network:
+
+Physical Layer: Deals with the hardware transmission of raw unstructured data over a physical medium (e.g., cables, switches).
+Data Link Layer: Responsible for node-to-node data transfer and error correction (e.g., Ethernet, Wi-Fi).
+Network Layer: Handles routing of data packets between devices across different networks (e.g., IP).
+Transport Layer: Ensures reliable data transmission and error recovery (e.g., TCP, UDP).
+Session Layer: Manages sessions or connections between applications (e.g., NetBIOS, RPC).
+Presentation Layer: Translates data formats, encryption, and compression (e.g., JPEG, TLS).
+Application Layer: Interfaces directly with the user and provides network services (e.g., HTTP, FTP).
+
+
+21. Protocols Used in Each Layer:
+Physical Layer: Ethernet (IEEE 802.3), DSL.
+Data Link Layer: MAC, ARP, PPP.
+Network Layer: IP, ICMP, IGMP.
+Transport Layer: TCP (for reliable communication), UDP (for faster, connectionless communication).
+Session Layer: NetBIOS, PPTP.
+Presentation Layer: SSL/TLS, JPEG, ASCII.
+Application Layer: HTTP, FTP, SMTP, SNMP.
+
+22. TCP/IP Layers:
+The TCP/IP model consists of four layers:
+
+Application Layer: Interfaces with applications and provides services (e.g., HTTP, FTP).
+Transport Layer: Manages end-to-end communication (e.g., TCP, UDP).
+Internet Layer: Handles the routing of packets across networks (e.g., IP).
+Network Interface Layer: Deals with the physical connection to the network (e.g., Ethernet).
+
+23. Explain All Layers of OSI Model with Example:
+Physical Layer:
+Example: Ethernet cables transmitting bits.
+Data Link Layer:
+Example: Switches filtering data based on MAC addresses.
+Network Layer:
+Example: Routers directing packets using IP addresses.
+Transport Layer:
+Example: TCP ensuring data packets are delivered reliably.
+Session Layer:
+Example: A user logging into a web application establishes a session.
+Presentation Layer:
+Example: Converting data formats from a web server for the browser.
+Application Layer:
+Example: A web browser (HTTP) or email client (SMTP).
+
+
+24. Static vs Dynamic IP:
+Static IP:
+Definition: A fixed IP address that is manually assigned to a device and does not change over time.
+Use Case: Typically used for servers that need a consistent address for remote access.
+Dynamic IP:
+Definition: An IP address that is automatically assigned by a DHCP server, which can change periodically.
+Use Case: Commonly used for consumer devices like laptops and smartphones, which can connect to different networks.
